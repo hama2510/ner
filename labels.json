@@ -1,0 +1,13 @@
+[
+  "O",
+  "B-PERSON",
+  "I-PERSON",
+  "B-PHONE",
+  "I-PHONE",
+  "B-DATEOFBIRTH",
+  "I-DATEOFBIRTH",
+  "B-SSN",
+  "I-SSN",
+  "B-DIAGNOSIS_CODE",
+  "I-DIAGNOSIS_CODE"
+]
