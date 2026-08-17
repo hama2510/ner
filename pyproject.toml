@@ -6,15 +6,27 @@ requires-python = ">=3.10,<3.14"
 dependencies = [
   "accelerate>=1.6.0",
   "datasets>=3.4.1",
+  "einops>=0.8.2",
   "evaluate>=0.4.3",
   "numpy>=1.26.0",
+  "onnxruntime>=1.20.0",
+  # PP-StructureV3 is part of the PaddleOCR 3.x inference API.  It uses
+  # OCR/layout/table models and does not use PaddleOCR-VL.
+  "paddleocr>=3.7.0",
+  "paddlepaddle>=3.0.0",
+  "paddlex[ocr]>=3.7.0",
   "peft>=0.15.2",
+  "pillow>=12.3.0",
   "protobuf>=7.35.1",
+  "pypdfium2>=5.12.1",
   "safetensors>=0.5.3",
+  "sentencepiece>=0.2.2",
   "seqeval>=1.2.2",
   "tensorboard>=2.19.0",
   "torch>=2.5.0",
-  "transformers>=4.51.0,<5.0.0",
+  "torchvision>=0.28.0",
+  # PaddleOCR-VL's remote code is adapted for the 4.57 masking implementation in test.py.
+  "transformers>=4.57.0,<5.0.0",
 ]
 
 [tool.uv]
